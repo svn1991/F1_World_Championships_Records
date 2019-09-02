@@ -2,6 +2,9 @@
 
 This app is built using plain react. It displays F1 championships records for 2005 - 2015 currently based on api data from [erghast](http://ergast.com/mrd/).
 
+Built using [CodeSandbox.io](https://codesandbox.io/s/github/svn1991/F1_World_Championships_Records)
+Hosted on [Github Pages](https://svn1991.github.io/F1_World_Championships_Records/) 
+
 ## Installation
 
 ** Please ensure that you have the latest [node](https://nodejs.org/en/) and [npm](https://www.npmjs.com/get-npm) installed.
