@@ -1,0 +1,11 @@
+.seasons-wrapper {
+  max-width: 920px;
+  margin: 50px auto;
+}
+.seasons-wrapper .seasons-title {
+  margin-bottom: 30px;
+}
+
+.seasons-wrapper #loading-wrapper {
+  margin: 110px 0;
+}
