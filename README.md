@@ -1,8 +1,8 @@
-#F1 World Championships Records
+# F1 World Championships Records
 
 This app is built using plain react. It displays F1 championships records for 2005 - 2015 currently based on api data from [erghast](http://ergast.com/mrd/).
 
-##Installation
+## Installation
 
 ** Please ensure that you have the latest [node](https://nodejs.org/en/) and [npm](https://www.npmjs.com/get-npm) installed.
 
