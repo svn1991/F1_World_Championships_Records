@@ -1,5 +1,6 @@
 {
   "name": "f1-world-championship-results",
+  "homepage":"https://github.com/svn1991/F1_World_Championships_Records",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
@@ -7,7 +8,7 @@
   "dependencies": {
     "@testing-library/react": "8.0.8",
     "axios": "0.19.0",
-    "jest": "24.9.0",
+    "gh-pages": "^2.1.1",
     "prop-types": "15.7.2",
     "react": "16.8.6",
     "react-bootstrap-table-next": "3.1.9",
@@ -20,8 +21,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jest",
-    "eject": "react-scripts eject"
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"    
   },
   "browserslist": [
     ">0.2%",
