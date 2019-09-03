@@ -1,12 +1,12 @@
-import axios from "axios";
+import axios from 'axios';
 
 const storage = window.localStorage;
-const url = "https://ergast.com/api/f1";
+const url = 'https://ergast.com/api/f1';
 
 export function getSeasonsInfoFrom(startYear, endYear) {
-  const seasonRangeUrl = `${url}/seasons.json?limit=${endYear -
-    startYear +
-    1}&offset=${startYear - 1950}`;
+  const seasonRangeUrl = `${url}/seasons.json?limit=${endYear
+    - startYear
+    + 1}&offset=${startYear - 1950}`;
   if (!storage[seasonRangeUrl]) {
     return axios
       .get(seasonRangeUrl)
@@ -14,18 +14,20 @@ export function getSeasonsInfoFrom(startYear, endYear) {
         const { data } = response;
         const { MRData } = data;
         const seasons = MRData.SeasonTable.Seasons;
-        storage.setItem(seasonRangeUrl, JSON.stringify(seasons));
+        if (seasons.length > 0) {
+          storage.setItem(seasonRangeUrl, JSON.stringify(seasons));
+        } else {
+          throw Error;
+        }
+        return seasons;
       })
-      .catch(err => {
-        console.log(err);
+      .catch(() => {
         storage.setItem(seasonRangeUrl, JSON.stringify([]));
-      })
-      .then(() => {
-        return JSON.parse(storage.getItem(seasonRangeUrl));
+        return [];
       });
-  } else {
-    return Promise.resolve(JSON.parse(storage.getItem(seasonRangeUrl)));
   }
+
+  return Promise.resolve(JSON.parse(storage.getItem(seasonRangeUrl)));
 }
 
 export function getWinnerForYear(year) {
@@ -37,21 +39,17 @@ export function getWinnerForYear(year) {
         const { data } = response;
         const { MRData } = data;
 
-        const driver =
-          MRData.StandingsTable.StandingsLists[0].DriverStandings[0].Driver;
+        const driver = MRData.StandingsTable.StandingsLists[0].DriverStandings[0].Driver;
         driver.winningYearRecord = year;
         storage.setItem(winnerUrl, JSON.stringify(driver));
+        return driver;
       })
-      .catch(err => {
-        console.log(err);
+      .catch(() => {
         storage.setItem(winnerUrl, JSON.stringify({}));
-      })
-      .then(() => {
-        return JSON.parse(storage.getItem(winnerUrl));
+        return {};
       });
-  } else {
-    return Promise.resolve(JSON.parse(storage.getItem(winnerUrl)));
   }
+  return Promise.resolve(JSON.parse(storage.getItem(winnerUrl)));
 }
 
 export function getRacesInfoFrom(year) {
@@ -64,16 +62,17 @@ export function getRacesInfoFrom(year) {
         const { MRData } = data;
 
         const races = MRData.RaceTable.Races;
-        storage.setItem(racesUrl, JSON.stringify(races));
+        if (races.length > 0) {
+          storage.setItem(racesUrl, JSON.stringify(races));
+        } else {
+          throw Error;
+        }
+        return races;
       })
-      .catch(err => {
-        console.log(err);
+      .catch(() => {
         storage.setItem(racesUrl, JSON.stringify([]));
-      })
-      .then(() => {
-        return JSON.parse(storage.getItem(racesUrl));
+        return [];
       });
-  } else {
-    return Promise.resolve(JSON.parse(storage.getItem(racesUrl)));
   }
+  return Promise.resolve(JSON.parse(storage.getItem(racesUrl)));
 }
