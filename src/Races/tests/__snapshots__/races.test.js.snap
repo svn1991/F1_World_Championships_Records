@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Races /> should render and match the snapshot 1`] = `
+<div
+  class="races-wrapper"
+>
+  <h1
+    class="races-title"
+  >
+    F1 Races for Season 2009
+  </h1>
+  <div
+    id="loading-wrapper"
+  >
+    <div
+      id="loading-text"
+    >
+      LOADING
+    </div>
+    <div
+      id="loading-content"
+    />
+  </div>
+</div>
+`;
+
+exports[`<Races /> should render and match the snapshot with races data 1`] = `
+<div
+  class="races-wrapper"
+>
+  <h1
+    class="races-title"
+  >
+    F1 Races for Season 2009
+  </h1>
+  <div
+    id="loading-wrapper"
+  >
+    <div
+      id="loading-text"
+    >
+      LOADING
+    </div>
+    <div
+      id="loading-content"
+    />
+  </div>
+</div>
+`;
