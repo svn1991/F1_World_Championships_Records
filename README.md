@@ -11,7 +11,7 @@ This app is built using plain react. It displays F1 championships records for 20
 
 1) `git clone https://github.com/svn1991/F1_World_Championships_Records.git`
 2) npm install
-3) npm run build
+3) npm run start
 
 ## Application
 
