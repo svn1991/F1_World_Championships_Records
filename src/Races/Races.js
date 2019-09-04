@@ -1,30 +1,30 @@
-import React, { useState, useEffect } from "react";
-import { getRacesInfoFrom } from "../CacheData/CacheData";
-import BootstrapTable from "react-bootstrap-table-next";
-import PropTypes from "prop-types";
+import React, { useState, useEffect } from 'react';
+import BootstrapTable from 'react-bootstrap-table-next';
+import PropTypes from 'prop-types';
+import { getRacesInfoFrom } from '../CacheData/CacheData';
 
-import Loader from "../Loader/Loader";
+import Loader from '../Loader/Loader';
 
-import "./styles.css";
+import './styles.css';
 
 function Races(props) {
   const { year, seasonWinner } = props;
   const [races, setRaces] = useState({});
 
   useEffect(() => {
-    getRacesInfoFrom(year).then(races => {
+    getRacesInfoFrom(year).then(racesResult => {
       const raceObject = {};
-      races.forEach((race, index) => {
+      racesResult.forEach(race => {
         raceObject[race.round] = {
           round: race.round,
           raceName: race.raceName,
           raceUrl: race.url,
-          winner: race.Results[0].Driver
+          winner: race.Results[0].Driver,
         };
       });
       setRaces(raceObject);
     });
-  }, []);
+  }, [year]);
 
   function getRacesProducts() {
     const raceKeys = Object.keys(races);
@@ -37,25 +37,25 @@ function Races(props) {
           <a
             href={race.winner.url}
             className={
-              race.winner.driverId === seasonWinner ? "highlight-winner" : ""
+              race.winner.driverId === seasonWinner ? 'highlight-winner' : ''
             }
           >
             {`${race.winner.givenName} ${race.winner.familyName}`}
           </a>
-        )
+        ),
       };
     });
   }
 
   const columns = [
     {
-      dataField: "race",
-      text: "Races"
+      dataField: 'race',
+      text: 'Races',
     },
     {
-      dataField: "winner",
-      text: "Winner"
-    }
+      dataField: 'winner',
+      text: 'Winner',
+    },
   ];
 
   return (
@@ -64,13 +64,15 @@ function Races(props) {
       {Object.keys(races).length === 0 ? (
         <Loader />
       ) : (
-        <BootstrapTable
-          keyField="id"
-          data={getRacesProducts()}
-          columns={columns}
-          condensed
-          bordered={false}
-        />
+        <div data-testid="table">
+          <BootstrapTable
+            keyField="id"
+            data={getRacesProducts()}
+            columns={columns}
+            condensed
+            bordered={false}
+          />
+        </div>
       )}
     </div>
   );
@@ -78,7 +80,7 @@ function Races(props) {
 
 Races.propTypes = {
   year: PropTypes.number.isRequired,
-  seasonWinner: PropTypes.string.isRequired
+  seasonWinner: PropTypes.string.isRequired,
 };
 
 export default Races;
