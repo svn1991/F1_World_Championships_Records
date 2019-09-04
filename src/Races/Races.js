@@ -32,7 +32,7 @@ function Races(props) {
       const race = races[raceKey];
       return {
         id: race.round,
-        race: <a href={race.url}>{race.raceName}</a>,
+        race: <a href={race.raceUrl}>{race.raceName}</a>,
         winner: (
           <a
             href={race.winner.url}

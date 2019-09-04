@@ -34,16 +34,321 @@ exports[`<Races /> should render and match the snapshot with races data 1`] = `
     F1 Races for Season 2009
   </h1>
   <div
-    id="loading-wrapper"
+    data-testid="table"
   >
     <div
-      id="loading-text"
+      class="react-bootstrap-table"
     >
-      LOADING
+      <table
+        class="table table-condensed"
+      >
+        <thead>
+          <tr>
+            <th
+              tabindex="0"
+            >
+              Races
+            </th>
+            <th
+              tabindex="0"
+            >
+              Winner
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a
+                href="http://en.wikipedia.org/wiki/2009_Australian_Grand_Prix"
+              >
+                Australian Grand Prix
+              </a>
+            </td>
+            <td>
+              <a
+                class="highlight-winner"
+                href="http://en.wikipedia.org/wiki/Jenson_Button"
+              >
+                Jenson Button
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="http://en.wikipedia.org/wiki/2009_Malaysian_Grand_Prix"
+              >
+                Malaysian Grand Prix
+              </a>
+            </td>
+            <td>
+              <a
+                class="highlight-winner"
+                href="http://en.wikipedia.org/wiki/Jenson_Button"
+              >
+                Jenson Button
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="http://en.wikipedia.org/wiki/2009_Chinese_Grand_Prix"
+              >
+                Chinese Grand Prix
+              </a>
+            </td>
+            <td>
+              <a
+                class=""
+                href="http://en.wikipedia.org/wiki/Sebastian_Vettel"
+              >
+                Sebastian Vettel
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="http://en.wikipedia.org/wiki/2009_Bahrain_Grand_Prix"
+              >
+                Bahrain Grand Prix
+              </a>
+            </td>
+            <td>
+              <a
+                class="highlight-winner"
+                href="http://en.wikipedia.org/wiki/Jenson_Button"
+              >
+                Jenson Button
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="http://en.wikipedia.org/wiki/2009_Spanish_Grand_Prix"
+              >
+                Spanish Grand Prix
+              </a>
+            </td>
+            <td>
+              <a
+                class="highlight-winner"
+                href="http://en.wikipedia.org/wiki/Jenson_Button"
+              >
+                Jenson Button
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="http://en.wikipedia.org/wiki/2009_Monaco_Grand_Prix"
+              >
+                Monaco Grand Prix
+              </a>
+            </td>
+            <td>
+              <a
+                class="highlight-winner"
+                href="http://en.wikipedia.org/wiki/Jenson_Button"
+              >
+                Jenson Button
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="http://en.wikipedia.org/wiki/2009_Turkish_Grand_Prix"
+              >
+                Turkish Grand Prix
+              </a>
+            </td>
+            <td>
+              <a
+                class="highlight-winner"
+                href="http://en.wikipedia.org/wiki/Jenson_Button"
+              >
+                Jenson Button
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="http://en.wikipedia.org/wiki/2009_British_Grand_Prix"
+              >
+                British Grand Prix
+              </a>
+            </td>
+            <td>
+              <a
+                class=""
+                href="http://en.wikipedia.org/wiki/Sebastian_Vettel"
+              >
+                Sebastian Vettel
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="http://en.wikipedia.org/wiki/2009_German_Grand_Prix"
+              >
+                German Grand Prix
+              </a>
+            </td>
+            <td>
+              <a
+                class=""
+                href="http://en.wikipedia.org/wiki/Mark_Webber"
+              >
+                Mark Webber
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="http://en.wikipedia.org/wiki/2009_Hungarian_Grand_Prix"
+              >
+                Hungarian Grand Prix
+              </a>
+            </td>
+            <td>
+              <a
+                class=""
+                href="http://en.wikipedia.org/wiki/Lewis_Hamilton"
+              >
+                Lewis Hamilton
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="http://en.wikipedia.org/wiki/2009_European_Grand_Prix"
+              >
+                European Grand Prix
+              </a>
+            </td>
+            <td>
+              <a
+                class=""
+                href="http://en.wikipedia.org/wiki/Rubens_Barrichello"
+              >
+                Rubens Barrichello
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="http://en.wikipedia.org/wiki/2009_Belgian_Grand_Prix"
+              >
+                Belgian Grand Prix
+              </a>
+            </td>
+            <td>
+              <a
+                class=""
+                href="http://en.wikipedia.org/wiki/Kimi_R%C3%A4ikk%C3%B6nen"
+              >
+                Kimi Räikkönen
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="http://en.wikipedia.org/wiki/2009_Italian_Grand_Prix"
+              >
+                Italian Grand Prix
+              </a>
+            </td>
+            <td>
+              <a
+                class=""
+                href="http://en.wikipedia.org/wiki/Rubens_Barrichello"
+              >
+                Rubens Barrichello
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="http://en.wikipedia.org/wiki/2009_Singapore_Grand_Prix"
+              >
+                Singapore Grand Prix
+              </a>
+            </td>
+            <td>
+              <a
+                class=""
+                href="http://en.wikipedia.org/wiki/Lewis_Hamilton"
+              >
+                Lewis Hamilton
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="http://en.wikipedia.org/wiki/2009_Japanese_Grand_Prix"
+              >
+                Japanese Grand Prix
+              </a>
+            </td>
+            <td>
+              <a
+                class=""
+                href="http://en.wikipedia.org/wiki/Sebastian_Vettel"
+              >
+                Sebastian Vettel
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="http://en.wikipedia.org/wiki/2009_Brazilian_Grand_Prix"
+              >
+                Brazilian Grand Prix
+              </a>
+            </td>
+            <td>
+              <a
+                class=""
+                href="http://en.wikipedia.org/wiki/Mark_Webber"
+              >
+                Mark Webber
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="http://en.wikipedia.org/wiki/2009_Abu_Dhabi_Grand_Prix"
+              >
+                Abu Dhabi Grand Prix
+              </a>
+            </td>
+            <td>
+              <a
+                class=""
+                href="http://en.wikipedia.org/wiki/Sebastian_Vettel"
+              >
+                Sebastian Vettel
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div
-      id="loading-content"
-    />
   </div>
 </div>
 `;
