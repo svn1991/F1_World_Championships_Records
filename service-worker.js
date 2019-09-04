@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/F1_World_Championships_Records/precache-manifest.3635f6d2faf3db604528a9cc1f877e38.js"
+  "/F1_World_Championships_Records/precache-manifest.03c64df619ca9f790224efece65c9483.js"
 );
 
 self.addEventListener('message', (event) => {

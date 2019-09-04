@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/F1_World_Championships_Records/static/css/main.4a0692fc.chunk.css",
-    "main.js": "/F1_World_Championships_Records/static/js/main.917a85c7.chunk.js",
-    "main.js.map": "/F1_World_Championships_Records/static/js/main.917a85c7.chunk.js.map",
+    "main.js": "/F1_World_Championships_Records/static/js/main.dbc9e996.chunk.js",
+    "main.js.map": "/F1_World_Championships_Records/static/js/main.dbc9e996.chunk.js.map",
     "runtime~main.js": "/F1_World_Championships_Records/static/js/runtime~main.c0ff6823.js",
     "runtime~main.js.map": "/F1_World_Championships_Records/static/js/runtime~main.c0ff6823.js.map",
-    "static/js/2.fd5194fd.chunk.js": "/F1_World_Championships_Records/static/js/2.fd5194fd.chunk.js",
-    "static/js/2.fd5194fd.chunk.js.map": "/F1_World_Championships_Records/static/js/2.fd5194fd.chunk.js.map",
+    "static/js/2.e64bb045.chunk.js": "/F1_World_Championships_Records/static/js/2.e64bb045.chunk.js",
+    "static/js/2.e64bb045.chunk.js.map": "/F1_World_Championships_Records/static/js/2.e64bb045.chunk.js.map",
     "index.html": "/F1_World_Championships_Records/index.html",
-    "precache-manifest.3635f6d2faf3db604528a9cc1f877e38.js": "/F1_World_Championships_Records/precache-manifest.3635f6d2faf3db604528a9cc1f877e38.js",
+    "precache-manifest.03c64df619ca9f790224efece65c9483.js": "/F1_World_Championships_Records/precache-manifest.03c64df619ca9f790224efece65c9483.js",
     "service-worker.js": "/F1_World_Championships_Records/service-worker.js",
     "static/css/main.4a0692fc.chunk.css.map": "/F1_World_Championships_Records/static/css/main.4a0692fc.chunk.css.map"
   }

@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5a925f7a82ade2cfd0c6ee07549a2a10",
+    "revision": "41e44a77f3b9b6c909bde40380c68fd5",
     "url": "/F1_World_Championships_Records/index.html"
   },
   {
-    "revision": "5ab2d000485dfa25d7b7",
+    "revision": "f2d2edf0887159bad35f",
     "url": "/F1_World_Championships_Records/static/css/main.4a0692fc.chunk.css"
   },
   {
-    "revision": "1c116752e1b0c5e688f0",
-    "url": "/F1_World_Championships_Records/static/js/2.fd5194fd.chunk.js"
+    "revision": "6762d943819f891e7541",
+    "url": "/F1_World_Championships_Records/static/js/2.e64bb045.chunk.js"
   },
   {
-    "revision": "5ab2d000485dfa25d7b7",
-    "url": "/F1_World_Championships_Records/static/js/main.917a85c7.chunk.js"
+    "revision": "f2d2edf0887159bad35f",
+    "url": "/F1_World_Championships_Records/static/js/main.dbc9e996.chunk.js"
   },
   {
     "revision": "eec7e5601eabaf6cca18",
