@@ -23,7 +23,7 @@ This app is built using plain react. It displays F1 championships records for 20
 
 ## TODOs/Improvements:
 
-1) Add unit testing
+1) Improve unit testing
 2) Add usage of redux/saga for better management of async calls to api
 3) Improve winner highlight by adding an icon
 4) Make range flexible so that user can select range of records to view on the fly
